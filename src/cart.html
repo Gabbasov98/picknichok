@@ -1,0 +1,134 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Корзина", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html',{"logo":"logo"})
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class='breadcrumbs__inner'>
+                        <a class='breadcrumbs__item' href='index.html'>ГЛАВНАЯ</a>
+                        <span class='breadcrumbs__item'>корзина</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class='cart'>
+                <div class='container'>
+                    <div class="cart__top">
+                        <h1 class="cart__title display2">Корзина</h1>
+                        <span class="cart__num">4 товара</span>
+                    </div>
+                    <div class='cart__inner'>
+                        <div class="cart__left">
+                            <div class="cart__nav">
+                                <div class="cart__all check">
+                                    <input type='checkbox' />
+                                    <label>Выбрать всё</label>
+                                </div>
+                                <button class="cart__delete">Удалить выбранное</button>
+                            </div>
+                            <div class="cart__items">
+                                @@for (var i = 0; i
+                                < 4; i++) { <!-- -->
+                                    <div class="cart-card">
+                                        <div class="cart-card__check check">
+                                            <input type='checkbox' />
+                                            <label></label>
+                                        </div>
+                                        <a href="" class="cart-card__img">
+                                            <img src="img/cart2.webp" alt="">
+                                        </a>
+                                        <div class="cart-card__info">
+                                            <a href="" class="cart-card__title">Мангал Премиум 200*500 мм складной</a>
+                                            <div class="cart-card__art">Арт.320082-42</div>
+                                        </div>
+                                        <div class="cart-card__right">
+                                            <button class="cart-card__delete">
+                                            <img src="img/close.png" alt="">
+                                        </button>
+                                            <div class="cart-card__price">999 Р</div>
+                                            <div class='cart-card__calc cartcalc'>
+                                                <button class='ccalc-minus'>-</button>
+                                                <input type='text' value='1'>
+                                                <button class='ccalc-plus'>+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    }
+                            </div>
+                        </div>
+                        <div class="cart__right">
+                            <div class="cart-order">
+                                <button class="cart-order__btn btn btn-gradient">
+                                    <span>Перейти к оформлению</span>
+                                    <span class="cart-order__btn-mob">4 шт., 3 996 Р</span>
+                                </button>
+                                <div class="cart-order__title">Характеристики</div>
+                                <div class="cart-order__items">
+                                    <div class="cart-order__item">
+                                        <span>4 товара</span>
+                                        <span>3 996 Р</span>
+                                    </div>
+                                    <div class="cart-order__item">
+                                        <span>Доставка</span>
+                                        <span>Бесплатно</span>
+                                    </div>
+                                </div>
+                                <div class="cart-order__bottom">
+                                    <span class="cart-order__bottom-title">Итого</span>
+                                    <span class="cart-order__sum">3 996 Р</span>
+                                </div>
+                            </div>
+
+                            <div class="cart-pay">
+                                <div class="cart-pay__title">Можете оплатить</div>
+                                <div class="cart-pay__items">
+                                    <div class="cart-pay__item">
+                                        <img src="img/pay.png" alt="">
+                                    </div>
+                                    <div class="cart-pay__item">
+                                        <img src="img/pay2.png" alt="">
+                                    </div>
+                                    <div class="cart-pay__item">
+                                        <img src="img/pay3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart-delivery">
+                                <div class="cart-delivery__title">Доставка</div>
+                                <div class="cart-delivery__items">
+                                    <div class="cart-delivery__item">
+                                        <img src="img/delivery.png" alt="">
+                                        <div>
+                                            <div class="cart-delivery__item-title">Самовывоз</div>
+                                            <div class="cart-delivery__item-desc">Бесплатно</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-delivery__item">
+                                        <img src="img/delivery2.png" alt="">
+                                        <div>
+                                            <div class="cart-delivery__item-title">Доставка, 2-3 дня</div>
+                                            <div class="cart-delivery__item-desc">
+                                                БЕСПЛАТНО при заказе <br> от 2 500 Р
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('components/page-blocks/_footer.html',{"logo":"logo"})
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

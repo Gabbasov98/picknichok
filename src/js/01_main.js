@@ -18,8 +18,8 @@ function mainSlider() {
 }
 
 $(document).ready(function() {
-    $('input[type="tel"]').mask('+7 999 999-9999', { placeholder: '+7             ' });
-
+    $('input[type="tel"]').mask('+7 999 999-9999', { autoclear: false }, { placeholder: '+7             ' });
+    cartCalc()
     mainSlider()
 
     $(".header__catalog-btn").click(function() {
@@ -38,7 +38,28 @@ $(document).ready(function() {
 
     $(".header__burger").click(function() {
         $(this).toggleClass("header__burger--active")
+        $("body").toggleClass("fixed-body ")
         $(".header__menu").toggleClass("header__menu--active")
     })
 
+
+
+
 });
+
+function cartCalc() {
+    $('.cartcalc .ccalc-minus').click(function() {
+        let a = $(this).closest('.cartcalc').find('input').val();
+        if (a > 1) {
+            let b = +a - 1;
+            $(this).closest('.cartcalc').find('input').val(b);
+        } else {
+            $(this).closest('.cartcalc').find('input').val(a);
+        }
+    });
+    $('.cartcalc .ccalc-plus').click(function() {
+        let a = $(this).closest('.cartcalc').find('input').val();
+        let b = +a + 1;
+        $(this).closest('.cartcalc').find('input').val(b);
+    });
+}

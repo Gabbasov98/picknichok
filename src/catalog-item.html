@@ -1,0 +1,169 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"КАТАЛОГ", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html',{"logo":"logo"})
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class='breadcrumbs__inner'>
+                        <a class='breadcrumbs__item' href='index.html'>ГЛАВНАЯ</a>
+                        <a class='breadcrumbs__item' href=''>КАТАЛОГ</a>
+                        <a class='breadcrumbs__item' href=''>Мангалы</a>
+                        <span class='breadcrumbs__item'>Мангал премиум</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class='catalog-item'>
+                <div class='container'>
+                    <div class='catalog-item__inner'>
+                        <div class="catalog-item__left">
+                            <div class="gallery">
+                                <div class="gallery__small">
+                                    <div thumbsSlider="" class=" swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/gallery.png" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/gallery.png" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/gallery.png" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/gallery.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__big">
+                                    <div class="swiper mySwiper2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/gallery.png" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/gallery.png" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/gallery.png" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/gallery.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-item__right">
+                            <div class="catalog-item__info">
+                                <h1 class="catalog-item__title display2">Мангал Премиум 200*500 мм складной</h1>
+                                <div class="catalog-item__art">Арт. 320082-42</div>
+                            </div>
+                            <div class="catalog-item__count">
+                                <div class="catalog-item__price">5 999 Р</div>
+                                <div class='catalog-item__calc cartcalc'>
+                                    <button class='ccalc-minus'>-</button>
+                                    <input type='text' value='1'>
+                                    <button class='ccalc-plus'>+</button>
+                                </div>
+                            </div>
+                            <div class="catalog-item__buttons">
+                                <button data-cart-added="В корзине" class="catalog-item__cart  catalog-item__btn btn btn-gradient">В корзину</button>
+                                <button class="catalog-item__favourite catalog-item__btn btn btn-green-outline">В избранное</button>
+                            </div>
+
+                            <div class="catalog-item__tabs">
+                                <div class="catalog-item__tab catalog-item__tab--active catalog-item__tab--props">Характеристики</div>
+                                <div class="catalog-item__tab catalog-item__tab--desc">Описание</div>
+                            </div>
+                            <div class="catalog-item__props">
+                                <div class="catalog-item__props-item">
+                                    <span>Высота</span>
+                                    <span>500 мм</span>
+                                </div>
+                                <div class="catalog-item__props-item">
+                                    <span>Ширина</span>
+                                    <span>400 мм</span>
+                                </div>
+                                <div class="catalog-item__props-item">
+                                    <span>Длина</span>
+                                    <span>700 мм</span>
+                                </div>
+                                <div class="catalog-item__props-item">
+                                    <span>Вид</span>
+                                    <span>Складной</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-item__desc">
+                        <div class="catalog-item__desc-title">Описание</div>
+                        <div class="catalog-item__desc-wrap">
+                            <p>Разборной мангал «Стандарт» - это простое и практичное решения для загородного отдыха и пикника. Мангал компактно транспортируется и требует минимум времени и усилий на сборку. В комплект входят шесть шампуров, поэтому вам
+                                не придется искать их отдельно или подбирать подходящие по длине.</p>
+                            <h5>Преимущества: </h5>
+                            <ul>
+                                <li>устойчивая конструкция;</li>
+                                <li>просто собирается;</li>
+                                <li>компактно складывается для хранения и транспортировки;</li>
+                                <li>комплектуется удобными шампурами.</li>
+                            </ul>
+                            <p>В интернет-каталоге “Веселый Пикничек” вы сможете подобрать подходящий по цене, стилю и дизайну мангал из широкого ассортимента. Приятных покупок в наших магазинах!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='collection'>
+                <div class='container'>
+                    <div class="collection__title">Похожие товары</div>
+                    <div class='collection__slider'>
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"catalog14", "has": "true"})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"catalog15", "has": "false"})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"catalog14", "has": "true"})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"catalog14", "has": "true"})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"catalog14", "has": "true"})
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-pagination'></div>
+                        <div class='swiper-button-prev'>
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.77821 1L1.22266 5.99965L6.77821 11" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class='swiper-button-next'>
+                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.22179 1L6.77734 5.99965L1.22179 11" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html',{"logo":"logo"})
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

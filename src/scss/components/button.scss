@@ -16,8 +16,11 @@
     color: #FFFFFF;
     &:hover {
         background: linear-gradient(97.58deg, #AAD047 30%, #00A110 109.84%);
-        // opacity: 0.8;
         color: #FFFFFF;
+    }
+    &:disabled {
+        background: #C4C4C4;
+        opacity: 1;
     }
 }
 
@@ -28,5 +31,26 @@
     &:hover {
         background-color: #f2f2f2;
         color: $primary;
+    }
+}
+
+.btn-white {
+    background: #F2F2F2;
+    border-radius: 5px;
+    border: 1px solid #F2F2F2;
+    color: #000000;
+    &:hover {
+        color: #000000;
+        background: darken(#F2F2F2, 15%);
+    }
+}
+
+.btn-green-outline {
+    color: #000;
+    border: 1px solid $primary;
+    border-radius: 5px;
+    &:hover {
+        background-color: $primary;
+        color: #fff;
     }
 }

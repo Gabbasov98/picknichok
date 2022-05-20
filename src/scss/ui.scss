@@ -5,7 +5,8 @@
 .form-group {
     position: relative;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    select,
     input,
     textarea {
         border: none;
@@ -29,6 +30,24 @@
         height: 80px;
         padding: 12px 20px;
     }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        &::-ms-expand {
+            display: none; // IE
+        }
+        background-image: url(../img/select-arrow.webp);
+        background-repeat: no-repeat;
+        background-position: right 6px center;
+        padding-right: 30px;
+        color: #AAAAAA;
+        &:focus {
+            color: #000;
+        }
+    }
 }
 
 .check {
@@ -44,8 +63,9 @@
         cursor: pointer;
         &:checked+label {
             &::before {
-                // background-color: $green;
-                border: 3px solid #fff;
+                background-image: url(../img/check.png);
+                background-repeat: no-repeat;
+                background-position: center;
             }
         }
         &:disabled+label {
@@ -54,25 +74,160 @@
         }
     }
     label {
-        padding-left: 40px;
+        padding-left: 25px;
         position: relative;
         min-height: 20px;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 19px;
         cursor: pointer;
+        display: flex;
+        align-items: center;
         &:before {
             content: '';
             position: absolute;
             z-index: 1;
-            border-radius: 2px;
-            background: rgba(255, 255, 255, 0.01);
-            border: 1px solid rgba(255, 255, 255, 0.45);
-            width: 20px;
-            height: 20px;
+            border-radius: 3px;
+            border: 1px solid $primary;
+            width: 16px;
+            height: 16px;
             left: 0;
             top: 50%;
             transform: translateY(-50%);
-            transition: all .100s;
+        }
+    }
+}
+
+.breadcrumbs {
+    margin-top: 10px;
+    &__item {
+        font-size: 16px;
+        line-height: 110%;
+        position: relative;
+        color: #AAAAAA;
+        text-transform: uppercase;
+        &:not(:first-child) {
+            margin-left: 28px;
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                width: 10px;
+                height: 10px;
+                top: 4.5px;
+                right: 100%;
+                margin-right: 10px;
+                background-image: url(../img/breadcrumbs-arrow.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+}
+
+.cartcalc {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    input {
+        width: calc(100% - 60px);
+        font-weight: 500;
+        font-size: 16px;
+        border: none;
+        text-align: center;
+    }
+    button {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid $primary;
+        font-size: 14px;
+        line-height: 16px;
+        &:hover {
+            background-color: $primary;
+            color: #fff;
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+    &__item {
+        height: 30px;
+        min-width: 25px;
+        padding: 0 5px;
+        margin: 0 3px;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--active {
+            pointer-events: none;
+            border-radius: 5px;
+            border: 1px solid $primary;
+        }
+    }
+}
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-bullet {
+        margin: 0 10px !important;
+        background: #F2F2F2;
+        opacity: 1;
+        width: 13px;
+        height: 13px;
+        &-active {
+            width: 18px;
+            height: 18px;
+            background: #6EB87E;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .breadcrumbs {
+        margin-top: 0;
+        &__item {
+            font-size: 10px;
+            &:not(:first-child) {
+                margin-left: 20px;
+                &::before {
+                    margin-right: 9px;
+                    top: 1px;
+                    width: 4px;
+                    background-size: 4px auto;
+                }
+            }
+        }
+    }
+    .pagination {
+        margin-top: 30px;
+    }
+    .swiper-pagination {
+        &-bullet {
+            width: 6px;
+            height: 6px;
+            margin: 0 5px !important;
+            &-active {
+                width: 9px;
+                height: 9px;
+            }
+        }
+    }
+    .form-group {
+        input,
+        textarea {
+            border-radius: 3px;
+            font-size: 10px;
+        }
+        input {
+            height: 30px;
         }
     }
 }

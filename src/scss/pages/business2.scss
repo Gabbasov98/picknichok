@@ -1,0 +1,204 @@
+.info {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    &__inner {
+        margin-top: 50px;
+    }
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+    &__desc {
+        margin-top: 50px;
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            &:not(:first-child) {
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+.branding-two {
+    padding-top: 60px;
+}
+
+.production {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title {
+        text-align: center;
+    }
+    &__swiper {
+        position: relative;
+        margin-top: 50px;
+    }
+    .swiper {
+        max-width: 1060px;
+        height: 100%;
+        position: relative;
+        &-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-button {
+            &-prev {
+                left: 0;
+            }
+            &-next {
+                right: 0;
+            }
+        }
+    }
+    &__pagination {
+        bottom: -30px !important;
+        display: none;
+    }
+}
+
+.certificates {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    &__title {
+        text-align: center;
+    }
+    &__swiper {
+        position: relative;
+        margin-top: 40px;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        &-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-button {
+            &-prev {
+                left: -10px;
+            }
+            &-next {
+                right: -10px;
+            }
+        }
+    }
+    &__pagination {
+        bottom: -30px !important;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .info {
+        padding-top: 15px;
+        padding-bottom: 20px;
+        &__inner {
+            margin-top: 30px;
+        }
+        &__desc {
+            margin-top: 30px;
+            p {
+                font-size: 12px;
+                line-height: 145.5%;
+                &:not(:first-child) {
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
+    .branding-two {
+        padding-top: 20px;
+    }
+    .production {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        &__swiper {
+            margin-top: 30px;
+        }
+        .swiper {
+            max-width: 500px;
+        }
+        &__pagination {
+            display: flex;
+        }
+    }
+    .certificates {
+        &__swiper {
+            margin-top: 30px;
+        }
+        padding-top: 20px;
+        .swiper {
+            max-width: 500px;
+        }
+        &__pagination {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .production {
+        .swiper {
+            &-button {
+                &-prev {
+                    display: none;
+                }
+                &-next {
+                    display: none;
+                }
+            }
+        }
+    }
+    .certificates {
+        .swiper {
+            &-button {
+                &-prev {
+                    display: none;
+                }
+                &-next {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .info {
+        &__desc {
+            p {
+                font-size: 10px;
+                line-height: 145.5%;
+            }
+        }
+    }
+    .production {
+        .swiper {
+            max-width: calc(100% - 100px);
+        }
+    }
+    .certificates {
+        padding-bottom: 40px;
+        .swiper {
+            max-width: calc(100% - 100px);
+        }
+    }
+}

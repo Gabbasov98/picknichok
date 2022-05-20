@@ -1,0 +1,28 @@
+<div class="catalog-card">
+    <div class="catalog-card__top">
+        <button class="catalog-card__favourite"></button>
+        <a href="" class="catalog-card__img">
+            <img src="img/@@img.webp" alt="">
+        </a>
+    </div>
+    <div class="catalog-card__info">
+        <span class="catalog-card__price">999 Р</span>
+        <!--  -->
+        @@if(has === "true"){<span class="catalog-card__has">в наличии</span>}
+        <!--  -->
+        @@if(has === "false"){<span class="catalog-card__has catalog-card__has--no">нет в наличии</span>}
+
+    </div>
+    <a href="" class="catalog-card__title">Мангал премиум 200*500 мм</a>
+    <div class="catalog-card__art">Арт. 320130-42</div>
+    <!--  -->
+    @@if(has === "true"){ <button class="catalog-card__btn btn btn-gradient">В корзину</button>}
+    <!--  -->
+    @@if(has === "false"){ <button class="catalog-card__btn btn btn-gradient" disabled>В корзину</button>}
+
+    <div class='catalog-card__calc cartcalc'>
+        <button class='ccalc-minus'>-</button>
+        <input type='text' value='1'>
+        <button class='ccalc-plus'>+</button>
+    </div>
+</div>

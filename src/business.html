@@ -1,0 +1,80 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Для бизнеса", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+
+        @@include('components/page-blocks/_header.html',{"logo":"logo"})
+        <main class="content">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class='breadcrumbs__inner'>
+                        <a class='breadcrumbs__item' href='index.html'>ГЛАВНАЯ</a>
+                        <span class='breadcrumbs__item'>Собственные торговые марки</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="business">
+                <div class="container">
+                    <div class="business__title display2">Для бизнеса</div>
+                    <div class="business__inner">
+                        <div class="business__left">
+                            <div class="business__inner-title">Производим товары под собственными торговыми марками</div>
+                            <button class="business__btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                        </div>
+                        <div class="business__right">
+                            <div class="business__img">
+                                <img src="img/business.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business__desc">
+                        <p class="business__text">
+                            Более 20 лет успешно работает на рынке товаров народного потребления. Многие крупные известные в Красноярске торговые сети доверили нам производство одноразовой посуды под собственной торговой маркой (СТМ), что говорит о ее высоком качестве. Перед выпуском
+                            вся продукция прошла серьезные испытания и исследования, что подтверждается наличием всех необходимых заключений и разрешений. В 1995 году компания запустила собственное упаковочное производство наборов одноразовой посуды под
+                            торговой маркой «Веселый пикничок».С 1997 года компания осуществляет деятельность по упаковке наборов одноразовой посуды, угля и другого производимого ассортимента для сторонних организаций под их собственными брендами. На
+                            сегодняшний день мы имеем достаточный опыт и производственные мощности для того, чтобы производить данную продукцию в промышленных объемах.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="branding">
+                @@include('components/page-blocks/_branding.html')
+            </section>
+
+            <section class="our-work">
+                @@include('components/page-blocks/_our-work.html')
+            </section>
+
+            <section class='retailer'>
+                @@include('components/page-blocks/_retailer.html')
+            </section>
+
+            <section class="offer">
+                <div class="container">
+                    <div class="offer__inner">
+                        <div class="offer__title display2">ПОЛУЧИТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</div>
+                        <form class="form offer__form">
+                            <fieldset class="form-group offer__form-group">
+                                <input type="text" placeholder="ФИО">
+                            </fieldset>
+                            <fieldset class="form-group offer__form-group">
+                                <input type="text" placeholder="Телефон">
+                            </fieldset>
+                            <button class="offer__btn">Оформить заказ</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html',{"logo":"logo"})
+    </div>
+    @@include('components/page-blocks/_scripts.html')
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"КАТАЛОГ", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html',{"logo":"logo"})
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class='breadcrumbs__inner'>
+                        <a class='breadcrumbs__item' href='index.html'>ГЛАВНАЯ</a>
+                        <a class='breadcrumbs__item' href='catalog.html'>КАТАЛОГ</a>
+                        <span class='breadcrumbs__item'>Мангалы</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class='catalog-page'>
+                <div class='container'>
+                    <div class="catalog-page__top">
+                        <h1 class="catalog-page__title display2">Мангалы</h1>
+                        <span class="catalog-page__num">43 товара</span>
+                    </div>
+                    <div class='catalog-page__inner'>
+                        <div class="catalog-page__left">
+                            <div class="filter">
+                                <div class="filter__top">
+                                    <div class="filter__top-title">Фильтры</div>
+                                    <button class="filter__close">
+                                        <img src="img/close.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="filter__group">
+                                    <div class="filter__title">Цена</div>
+                                    <div class="filter__price range-slider">
+                                        <div class="range-slider__wrap">
+                                            <div class="range-slider" id="range"></div>
+                                        </div>
+                                        <div class="range-slider__inputs">
+                                            <div class="range-slider__input">
+                                                <input class="" id="range-input1" type="number">
+                                            </div>
+                                            <span>-</span>
+                                            <div class="range-slider__input">
+                                                <input max="10000" id="range-input2" type="number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__group">
+                                    <div class="filter__title">Высота, мм</div>
+                                    <div class="filter__checks">
+                                        <div class="filter__check check">
+                                            <input type='checkbox' />
+                                            <label>
+                                                <span>500 </span>
+                                                 (13)
+                                            </label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input checked type='checkbox' />
+                                            <label>
+                                                <span>600 </span>
+                                                 (5)
+                                            </label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type='checkbox' />
+                                            <label>
+                                                <span>700 </span>
+                                                 (9)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__group">
+                                    <div class="filter__title">Длина, мм</div>
+                                    <div class="filter__checks">
+                                        <div class="filter__check check">
+                                            <input type='checkbox' />
+                                            <label>
+                                                <span>500 </span>
+                                                 (13)
+                                            </label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input checked type='checkbox' />
+                                            <label>
+                                                <span>600 </span>
+                                                 (5)
+                                            </label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type='checkbox' />
+                                            <label>
+                                                <span>700 </span>
+                                                 (9)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__group">
+                                    <div class="filter__title">Ширина, мм</div>
+                                    <div class="filter__checks">
+                                        <div class="filter__check check">
+                                            <input type='checkbox' />
+                                            <label>
+                                                <span>500 </span>
+                                                 (13)
+                                            </label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input checked type='checkbox' />
+                                            <label>
+                                                <span>600 </span>
+                                                 (5)
+                                            </label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type='checkbox' />
+                                            <label>
+                                                <span>700 </span>
+                                                 (9)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__group">
+                                    <div class="filter__title">Вид</div>
+                                    <div class="filter__checks">
+                                        <div class="filter__check check">
+                                            <input type='checkbox' />
+                                            <label>
+                                                <span>Разборный </span>
+                                                 (23)
+                                            </label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input checked type='checkbox' />
+                                            <label>
+                                                <span>Складной </span>
+                                                 (12)
+                                            </label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type='checkbox' />
+                                            <label>
+                                                <span>Стационарный </span>
+                                                 (2)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="filter__btn btn btn-gradient">Применить</button>
+                            </div>
+                        </div>
+                        <div class="catalog-page__right">
+                            <div class="catalog-page__top2">
+                                <div class="selected-filters">
+                                    <div class="selected-filters__item">
+                                        <span>Высота: 600 мм</span>
+                                        <button></button>
+                                    </div>
+                                    <div class="selected-filters__item">
+                                        <span>Длина: 600 мм</span>
+                                        <button></button>
+                                    </div>
+                                    <div class="selected-filters__item">
+                                        <span>Ширина: 600 мм</span>
+                                        <button></button>
+                                    </div>
+                                    <div class="selected-filters__item">
+                                        <span>Вид: Складной</span>
+                                        <button></button>
+                                    </div>
+                                    <div class="selected-filters__all">
+                                        <span>Очистить всё</span>
+                                        <button></button>
+                                    </div>
+                                </div>
+                                <fieldset class='catalog-page__select form-group'>
+                                    <select>
+                                       <option selected>Наименования от А до Я</option>
+                                       <option>Наименования от Я до А</option>
+                                   </select>
+                                </fieldset>
+                                <button class="catalog-page__filter-btn">
+                                    <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="1" y1="1.75998" x2="22" y2="1.75998" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                                        <line x1="1" y1="9.12" x2="22" y2="9.12" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                                        <line x1="1" y1="16.48" x2="22" y2="16.48" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                                        <circle cx="6.4401" cy="9.19999" r="1.84" fill="black"/>
+                                        <circle cx="12.88" cy="1.84" r="1.84" fill="black"/>
+                                        <circle cx="11.9596" cy="16.56" r="1.84" fill="black"/>
+                                    </svg>
+                                    <span>4</span>
+                                </button>
+                            </div>
+
+                            <div class="catalog-page__items">
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog14", "has": "true"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog15", "has": "false"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog16", "has": "true"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog14", "has": "true"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog15", "has": "false"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog16", "has": "true"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog14", "has": "true"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog15", "has": "false"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog16", "has": "true"})
+                            </div>
+
+                            <div class="pagination">
+                                <a href="" class="pagination__item pagination__item--active">1</a>
+                                <a href="" class="pagination__item">2</a>
+                                <a href="" class="pagination__item">3</a>
+                                <a href="" class="pagination__item">4</a>
+                                <a href="" class="pagination__item">5</a>
+                                <a href="" class="pagination__item">...</a>
+                                <a href="" class="pagination__item">10</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('components/page-blocks/_footer.html',{"logo":"logo"})
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

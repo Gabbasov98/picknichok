@@ -4,6 +4,7 @@ const plugins = [
     'node_modules/bootstrap/dist/js/bootstrap.js',
     'src/libs/js/jquery.fancybox.min.js',
     'src/libs/js/jquery.maskedinput.min.js',
+    'node_modules/nouislider/dist/nouislider.js',
 ];
 const {
     src,

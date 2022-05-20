@@ -1,0 +1,107 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Оформление заказа", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html',{"logo":"logo"})
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class='breadcrumbs__inner'>
+                        <a class='breadcrumbs__item' href='index.html'>ГЛАВНАЯ</a>
+                        <a class='breadcrumbs__item' href=''>корзина</a>
+                        <span class='breadcrumbs__item'>оформление заказа</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class='order'>
+                <div class='container'>
+                    <h1 class="order__title display2">Оформление заказа</h1>
+                    <div class='order__inner'>
+                        <div class="order__left">
+                            <div class="order__group">
+                                <div class="order__subtitle">Заказ №1202102301</div>
+                                <div class="order__desc">
+                                    <p>Елена, уведомления о статусе заказа вы будете получать в SMS на номер +7 999 623 8219 и по электронной почте test@test.ru.</p>
+                                    <p>
+                                        Узнать детали заказа можно по телефону <a href="tel:+73912655030">+7 391 265 5030</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="order__group">
+                                <div class="order__subtitle">Самовывоз из магазина</div>
+                                <div class="order__contacts">
+                                    <div class="order__contacts-item">
+                                        <img src="img/contact-icon.png" alt="">
+                                        <span>г. Красноярск, ул. 60 лет Октября, 144, стр. 4</span>
+                                    </div>
+                                    <div class="order__contacts-item">
+                                        <img src="img/contact-icon2.png" alt="">
+                                        <span>тел./факс: +7 (391) 265-50-30, 265-50-25</span>
+                                    </div>
+                                    <div class="order__contacts-item">
+                                        <img src="img/contact-icon3.png" alt="">
+                                        <span>c 9.00 до 18.00</span>
+                                    </div>
+                                    <div class="order__contacts-item">
+                                        <img src="img/contact-icon4.png" alt="">
+                                        <span>Можно забрать 18.05.2022 или в течение 3 дней</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__right">
+                            <div class="order-info">
+                                <div class="order-info__top">
+                                    <div class="order-info__title">Заказ</div>
+                                    <a href="" class="order-info__link">вернуться в корзину</a>
+                                </div>
+                                <div class="order-info__items">
+                                    <div class="order-product">
+                                        <div class="order-product__title">Мангал Премиум 200*500 мм складной</div>
+                                        <div class="order-product__desc">320082-42</div>
+                                        <div class="order-product__wrap">
+                                            <div class="order-product__num">2 шт.</div>
+                                            <div class="order-product__price">1 998 Р</div>
+                                        </div>
+                                    </div>
+                                    <div class="order-product">
+                                        <div class="order-product__title">Мангал Премиум 200*500 мм складной</div>
+                                        <div class="order-product__desc">320082-42</div>
+                                        <div class="order-product__wrap">
+                                            <div class="order-product__num">2 шт.</div>
+                                            <div class="order-product__price">1 998 Р</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order-info__items2">
+                                    <div class="order-info__item2">
+                                        <span>4 товара</span>
+                                        <span>3 996 Р</span>
+                                    </div>
+                                    <div class="order-info__item2">
+                                        <span>Доставка</span>
+                                        <span>Бесплатно</span>
+                                    </div>
+                                </div>
+
+                                <div class="order-info__sum">
+                                    <span class="order-info__sum-title">Итого</span>
+                                    <span class="order-info__sum-desc">3 996 Р</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html',{"logo":"logo"})
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

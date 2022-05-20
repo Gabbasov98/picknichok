@@ -1,0 +1,58 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Избранное", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html',{"logo":"logo"})
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class='breadcrumbs__inner'>
+                        <a class='breadcrumbs__item' href='index.html'>ГЛАВНАЯ</a>
+                        <span class='breadcrumbs__item'>Избранное</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class='cart favourite'>
+                <div class='container'>
+                    <div class="cart__top">
+                        <h1 class="cart__title display2">Избранное</h1>
+                        <span class="cart__num">2 товара</span>
+                    </div>
+                    <div class="cart__nav">
+                        <button class="cart__delete">Удалить выбранное</button>
+                    </div>
+                    <div class="cart__items">
+                        @@for (var i = 0; i
+                        < 2; i++) { <!-- -->
+                            <div class="cart-card">
+                                <a href="" class="cart-card__img">
+                                    <img src="img/cart2.webp" alt="">
+                                </a>
+                                <div class="cart-card__info">
+                                    <a href="" class="cart-card__title">Мангал Премиум 200*500 мм складной</a>
+                                    <div class="cart-card__art">Арт.320082-42</div>
+                                </div>
+                                <div class="cart-card__right">
+                                    <button class="cart-card__delete">
+                                    <img src="img/close.png" alt="">
+                                </button>
+                                    <div class="cart-card__price">999 Р</div>
+                                    <button class="cart-card__add btn btn-gradient">Добавить в корзину</button>
+                                </div>
+                            </div>
+                            }
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('components/page-blocks/_footer.html',{"logo":"logo"})
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

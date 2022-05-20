@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="en">
+<!DOCTYPE html> <html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Навигация</title>
+    <title>Главная</title>
 </head>
 
 
@@ -18,77 +18,122 @@
     
     .wrapper button {
         margin-bottom: 25px;
-        width: 300px;
-        height: 45px;
+        min-width: 300px;
+        max-width: 400px;
+        padding: 0 50px;
+        height: 65px;
     }
 </style>
 
 <body>
 
     <div class="wrapper" style="padding: 50px;">
-        <a href="login.html" style="display: block; margin-bottom: 20px;">
-            Авторизация
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
         </a>
-        <a href="recover-password.html" style="display: block; margin-bottom: 20px;">
-            Восстановление пароля
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
         </a>
-        <a href="recover-password-success.html" style="display: block; margin-bottom: 20px;">
-            Восстановление пароля 2
+        <a href="categories.html" style="display: block; margin-bottom: 20px;">
+            Каталог/Категории
         </a>
-        <a href="recover-password-mail.html" style="display: block; margin-bottom: 20px;">
-            Восстановление пароля 3
+        <a href="categories2.html" style="display: block; margin-bottom: 20px;">
+            премиум товары (цвет)
         </a>
-        <a href="create-new-password.html" style="display: block; margin-bottom: 20px;">
-            Создание нового пароля
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
         </a>
-        <a href="create-new-password-success.html" style="display: block; margin-bottom: 20px;">
-            Создание нового пароля 2
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина
         </a>
-        <a href="create-new-password-mail.html" style="display: block; margin-bottom: 20px;">
-            Создание нового пароля 3
+        <a href="favourite.html" style="display: block; margin-bottom: 20px;">
+            Избранное
         </a>
-        <a href="reg-complete.html" style="display: block; margin-bottom: 20px;">
-            Регистрация завершена
+        <a href="order.html" style="display: block; margin-bottom: 20px;">
+            Оформление заказа
         </a>
-        <a href="users.html" style="display: block; margin-bottom: 20px;">
-            Управление пользователями 
+        <a href="order2.html" style="display: block; margin-bottom: 20px;">
+            Страница подтверждения заказа
         </a>
-        <a href="parsers.html" style="display: block; margin-bottom: 20px;">
-            Управление парсерами
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
         </a>
-        <a href="settings.html" style="display: block; margin-bottom: 20px;">
-            Настройки
+        <a href="business.html" style="display: block; margin-bottom: 20px;">
+            Для бизнеса
         </a>
-        <a href="system-settings.html" style="display: block; margin-bottom: 20px;">
-            Системные данные
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О компании
         </a>
-        <a href="projects-empty.html" style="display: block; margin-bottom: 20px;">
-            Проекты > Нет проектов
-        </a>
-        <a href="projects-empty2.html" style="display: block; margin-bottom: 20px;">
-            Проекты > Нет непрочитанных публикаций
-        </a>
-        <a href="projects-empty3.html" style="display: block; margin-bottom: 20px;">
-            Проекты > Все уведомления прочитаны
-        </a>
-        <a href="projects.html" style="display: block; margin-bottom: 20px;">
-            Проекты > Проект
-        </a>
-        <a href="projects-edit.html" style="display: block; margin-bottom: 20px;">
-            Проекты > Проект [Редактирование]
-        </a>
-        <a href="projects-publish.html" style="display: block; margin-bottom: 20px;">
-            Проекты > Проект > Публикация
-        </a>
-        <a href="projects-publish2.html" style="display: block; margin-bottom: 20px;">
-            Проекты > Проект > Публикация [[Publication.gov.ru]] [Значимое] 
-        </a>
-        <a href="projects-source.html" style="display: block; margin-bottom: 20px;">
-            Projects > Source
-        </a>
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#modal1">
+            Оставить заявку
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#modal2">
+            Спасибо за заявку
+        </button>
+
     </div>
 
+    <div class="modal fade" id="modal1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close4.png" alt="">
+        </button>
+        <div class="modal__img">
+            <img src="img/modal-img.webp" alt="">
+        </div>
+        <div class="modal__content">
+            <div class="modal__wrap">
+                <div class="modal__title">Оставить заявку</div>
+                <div class="modal__desc">Заполните форму и мы свяжемся с вами для уточнения условия сотрудничества</div>
+                <form action="" class="modal__form">
+                    <fieldset class='modal__form-group form-group'>
+                        <input type='text' placeholder="Имя" />
+                    </fieldset>
+                    <fieldset class='modal__form-group form-group'>
+                        <input type='tel' placeholder="Телефон" />
+                    </fieldset>
+                    <fieldset class='modal__form-group form-group'>
+                        <input type='email' placeholder="Электронная почта" />
+                    </fieldset>
+                    <button class="modal__btn btn btn-gradient">Оформить заказ</button>
+                    <div class=" modal__agree ">
+                        Нажимая на кнопку “Оформить заказ”, я подтверждаю свое согласие с
+                        <a href=" ">политикой конфиденциальности</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="modal fade" id="modal2" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close4.png" alt="">
+        </button>
+        <div class="modal__img">
+            <img src="img/modal-img.webp" alt="">
+        </div>
+        <div class="modal__content">
+            <div class="modal__wrap modal__thanks">
+                <div class="modal__icon">
+                    <img src="img/check3.png" alt="">
+                </div>
+                <div class="modal__title">Мы увидели вашу заявку</div>
+                <div class="modal__desc">Наш менеджер уже берет телефон и набирает вам</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="modal-backdrop show "></div> -->
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
 
 </body>
 

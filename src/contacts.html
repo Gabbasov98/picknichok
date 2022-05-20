@@ -1,0 +1,143 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Контакты", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html',{"logo":"logo"})
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class='breadcrumbs__inner'>
+                        <a class='breadcrumbs__item' href='index.html'>ГЛАВНАЯ</a>
+                        <span class='breadcrumbs__item'>Контакты</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class='contacts'>
+                <div class='container'>
+                    <div class="contacts__title display2">Контакты</div>
+                    <div class="contacts-select">
+                        <div class="contacts-select__show">
+                            <span>Офис</span>
+                            <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.14645 4.35355C4.34171 4.54882 4.65829 4.54882 4.85355 4.35355L8.03553 1.17157C8.2308 0.976311 8.2308 0.659728 8.03553 0.464466C7.84027 0.269204 7.52369 0.269204 7.32843 0.464466L4.5 3.29289L1.67157 0.464466C1.47631 0.269204 1.15973 0.269204 0.964466 0.464466C0.769204 0.659728 0.769204 0.976311 0.964466 1.17157L4.14645 4.35355ZM4 3V4H5V3H4Z" fill="black"/>
+                            </svg>
+                        </div>
+                        <div class="contacts-select__hidden">
+                            <div class="contacts-select__variants">
+                                <div class="contacts-select__variant contacts-select__variant--selected" data-tab-path="1">Офис</div>
+                                <div class="contacts-select__variant" data-tab-path="2">Основной склад</div>
+                                <div class="contacts-select__variant" data-tab-path="3">Правобережный филиал</div>
+                                <div class="contacts-select__variant" data-tab-path="4">Филиал в г. Абакан</div>
+                                <div class="contacts-select__variant" data-tab-path="5">Филиал в г. Абакан</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='contacts__inner'>
+                        <div class="contacts__group contacts__group--active" data-tab-path="1">
+                            <div class="contacts__info">
+                                <div class="contacts__subtitle display2">Офис</div>
+                                <div class="contacts__items">
+                                    <div class="contacts__item">
+                                        <img src="img/contact-icon.png" alt="">
+                                        <span>г. Красноярск, ул. 60 лет Октября, 144, стр. 4</span>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <img src="img/contact-icon2.png" alt="">
+                                        <span>тел./факс: +7 (391) 265-50-30, 265-50-25</span>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <img src="img/contact-icon5.png" alt="">
+                                        <span>E-mail: ps-00@mail.ru</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__map">
+                                @@include('components/page-blocks/_map.html')
+                            </div>
+                        </div>
+                        <div class="contacts__group" data-tab-path="2">
+                            <div class="contacts__info">
+                                <div class="contacts__subtitle display2">Основной склад</div>
+                                <div class="contacts__items">
+                                    <div class="contacts__item">
+                                        <img src="img/contact-icon.png" alt="">
+                                        <span>г. Красноярск, ул. 4-ая Шинная, 20</span>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <img src="img/contact-icon2.png" alt="">
+                                        <span>тел./факс: +7 (391) 265-50-30, 265-50-25</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__map">
+                                @@include('components/page-blocks/_map.html')
+                            </div>
+                        </div>
+                        <div class="contacts__group" data-tab-path="3">
+                            <div class="contacts__info">
+                                <div class="contacts__subtitle display2">Правобережный филиал</div>
+                                <div class="contacts__items">
+                                    <div class="contacts__item">
+                                        <img src="img/contact-icon.png" alt="">
+                                        <span>г. Красноярск, ул. Вавилова, 3</span>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <img src="img/contact-icon2.png" alt="">
+                                        <span>тел.: 213-54-69</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__map">
+                                @@include('components/page-blocks/_map.html')
+                            </div>
+                        </div>
+                        <div class="contacts__group" data-tab-path="4">
+                            <div class="contacts__info">
+                                <div class="contacts__subtitle display2">Филиал в г. Абакан</div>
+                                <div class="contacts__items">
+                                    <div class="contacts__item">
+                                        <img src="img/contact-icon.png" alt="">
+                                        <span>ул. Заводская, 1В</span>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <img src="img/contact-icon2.png" alt="">
+                                        <span>тел.: 8 (3902) 355-051, 305-551, 305-552</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__map">
+                                @@include('components/page-blocks/_map.html')
+                            </div>
+                        </div>
+                        <div class="contacts__group" data-tab-path="5">
+                            <div class="contacts__info">
+                                <div class="contacts__subtitle display2">Филиал в г. Абакан</div>
+                                <div class="contacts__items">
+                                    <div class="contacts__item">
+                                        <img src="img/contact-icon.png" alt="">
+                                        <span>ул. Итыгина, 22А</span>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <img src="img/contact-icon2.png" alt="">
+                                        <span>тел.: 8 (3902) 305-851</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__map">
+                                @@include('components/page-blocks/_map.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html',{"logo":"logo"})
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

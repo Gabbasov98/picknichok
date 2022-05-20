@@ -1,0 +1,77 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"КАТАЛОГ", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper wrapper--premium">
+        @@include('components/page-blocks/_header.html',{"logo":"logo2"})
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class='breadcrumbs__inner'>
+                        <a class='breadcrumbs__item' href='index.html'>ГЛАВНАЯ</a>
+                        <a class='breadcrumbs__item' href='catalog.html'>КАТАЛОГ</a>
+                        <span class='breadcrumbs__item'>Мангалы</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class='catalog-page catalog-page--premium'>
+                <div class='container'>
+                    <div class="catalog-page__top">
+                        <h1 class="catalog-page__title display2">Премиум товары</h1>
+                        <span class="catalog-page__num">33 товара</span>
+                    </div>
+                    <div class='catalog-page__inner'>
+                        <div class="catalog-page__left">
+                            <div class="catalog-page__links">
+                                <a href="" class="catalog-page__link catalog-page__link--active">Мангалы (12)</a>
+                                <a href="" class="catalog-page__link">Аксессуары (20)</a>
+                                <a href="" class="catalog-page__link">Посуда (15)</a>
+                                <a href="" class="catalog-page__link">Уголь для мангала (25)</a>
+                                <a href="" class="catalog-page__link">Шампуры (12)</a>
+                            </div>
+                        </div>
+                        <div class="catalog-page__right">
+                            <div class="catalog-page__items">
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog14", "has": "true"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog15", "has": "false"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog16", "has": "true"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog14", "has": "true"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog15", "has": "false"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog16", "has": "true"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog14", "has": "true"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog15", "has": "false"})
+                                <!--  -->
+                                @@include('components/cards/_catalog-card.html',{"img":"catalog16", "has": "true"})
+                            </div>
+
+                            <div class="pagination">
+                                <a href="" class="pagination__item pagination__item--active">1</a>
+                                <a href="" class="pagination__item">2</a>
+                                <a href="" class="pagination__item">3</a>
+                                <a href="" class="pagination__item">4</a>
+                                <a href="" class="pagination__item">5</a>
+                                <a href="" class="pagination__item">...</a>
+                                <a href="" class="pagination__item">10</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('components/page-blocks/_footer.html',{"logo":"logo2"})
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
