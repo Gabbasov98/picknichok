@@ -63,7 +63,7 @@ function sliderProduction() {
 function sliderCertificates() {
     var swiper = new Swiper('.certificates .swiper', {
         slidesPerView: 4,
-        spaceBetween: 75,
+        spaceBetween: 55,
         navigation: {
             nextEl: '.certificates .swiper-button-next',
             prevEl: '.certificates .swiper-button-prev',
@@ -79,12 +79,14 @@ function sliderCertificates() {
                 spaceBetween: 12
             },
             768: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 25,
             },
             992: {
+                slidesPerView: 3,
+            },
+            1050: {
                 slidesPerView: 4,
-                spaceBetween: 75,
             }
         }
     })

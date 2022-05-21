@@ -2,7 +2,6 @@ function mainSlider() {
     var swiper = new Swiper('.main .swiper-container', {
         slidesPerView: 1,
         spaceBetween: 10,
-        speed: 2000,
         autoplay: true,
         loop: true,
         navigation: {
@@ -38,7 +37,7 @@ $(document).ready(function() {
 
     $(".header__burger").click(function() {
         $(this).toggleClass("header__burger--active")
-        $("body").toggleClass("fixed-body ")
+        $("body").toggleClass("fixed-body")
         $(".header__menu").toggleClass("header__menu--active")
     })
 

@@ -43,6 +43,7 @@
     a {
         &:hover {
             color: #fff;
+            opacity: 0.8;
         }
     }
     &__title {
@@ -162,21 +163,21 @@
             padding: 0 20px;
         }
         &__title {
-            font-size: 14px;
-            line-height: 17px;
+            font-size: 18px;
+            line-height: 20px;
             margin-bottom: 12px;
         }
         &__link {
-            font-size: 10px;
-            line-height: 12px;
+            font-size: 14px;
+            line-height: 16px;
             &:not(:last-child) {
                 margin-bottom: 12px;
             }
         }
         &__contacts {
             &-link {
-                font-size: 10px;
-                line-height: 12px;
+                font-size: 14px;
+                line-height: 16px;
                 &:not(:last-child) {
                     margin-bottom: 12px;
                 }
@@ -205,13 +206,16 @@
             }
         }
         &__address {
-            font-size: 10px;
-            line-height: 12px;
+            font-size: 14px;
+            line-height: 16px;
         }
         &__map {
             height: 200px;
-            width: calc(100% + 40px);
-            margin-left: -20px;
+            width: calc(100% + 20px);
+            margin-left: -10px;
+        }
+        &__contacts {
+            margin-left: 10px;
         }
     }
     .footer-mob {
@@ -237,13 +241,13 @@
         }
         &__title {
             display: block;
-            margin-top: 5px;
+            margin-top: 6px;
             font-weight: 400;
-            font-size: 8px;
-            line-height: 9px;
+            font-size: 12px;
+            line-height: 14px;
         }
         &__icon {
-            height: 21px;
+            height: 25px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -251,6 +255,14 @@
                 height: 100%;
                 width: auto;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .footer {
+        &__inner {
+            padding: 0;
         }
     }
 }

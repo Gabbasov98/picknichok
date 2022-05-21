@@ -1,9 +1,3 @@
-.display2 {
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 120%;
-}
-
 .business {
     padding-top: 20px;
     padding-bottom: 35px;
@@ -73,11 +67,6 @@
         gap: 45px;
     }
     &__item {
-        cursor: pointer;
-        transition: all 0.3s;
-        &:hover {
-            transform: translateZ(-10px) translateY(-10px);
-        }
         &-title {
             font-weight: 400;
             font-size: 16px;
@@ -180,9 +169,6 @@
 }
 
 @media screen and (max-width: 992px) {
-    .display2 {
-        font-size: 25px;
-    }
     .business {
         padding-top: 10px;
         padding-bottom: 15px;
@@ -278,10 +264,6 @@
 }
 
 @media screen and (max-width: 576px) {
-    .display2 {
-        font-size: 18px;
-        line-height: 24px;
-    }
     .business {
         &__inner {
             padding: 35px 40px 65px 10px;
@@ -297,20 +279,18 @@
         &__img {
             max-width: 180px;
         }
-        &__text {
-            font-size: 10px;
-        }
     }
     .branding {
         &__item {
             &-title {
-                font-size: 10px;
+                font-size: 13px;
                 line-height: 145.5%;
                 margin-top: 5px;
             }
         }
         &__img {
-            min-height: 135px;
+            min-height: unset;
+            height: 135px;
             padding: 10px;
         }
     }

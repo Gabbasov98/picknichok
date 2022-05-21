@@ -47,11 +47,13 @@
     &__cart {
         &--active {
             border: 1px solid $primary;
-            background: transparent;
             color: #000;
             position: relative;
             font-size: 0;
             &::before {
+                background: transparent;
+            }
+            &::after {
                 content: attr(data-cart-added);
                 position: absolute;
                 left: 0;
@@ -64,8 +66,12 @@
                 font-size: 16px;
             }
             &:hover {
-                background: $primary;
                 color: #fff;
+                border-color: transparent;
+                background: $primary;
+                &::before {
+                    background: transparent;
+                }
             }
         }
     }

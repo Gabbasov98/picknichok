@@ -279,7 +279,8 @@
         &__phone {
             width: unset;
             padding-left: 22px;
-            background-image: url(../img/call.webp);
+            background-image: url(../img/call2.svg);
+            background-size: 18px auto;
             background-repeat: no-repeat;
             background-position: left center;
             height: unset;
@@ -332,6 +333,7 @@
                 display: none;
             }
             &-btn {
+                font-weight: 500;
                 padding: 0;
                 justify-content: flex-start;
                 background: transparent !important;
@@ -342,6 +344,9 @@
                 height: unset;
                 &:hover {
                     color: $primary;
+                }
+                &::before {
+                    display: none;
                 }
             }
             &-dropdown {
@@ -392,8 +397,9 @@
             width: 60px;
         }
         &__phone {
-            font-size: 12px;
-            line-height: 14px;
+            font-size: 18px;
+            line-height: 18px;
+            margin-right: 20px;
         }
         &__search {
             position: relative;

@@ -6,6 +6,10 @@
         display: flex;
         justify-content: space-between;
     }
+    &__subtitle {
+        font-size: 30px;
+        line-height: 120%;
+    }
     &__map {
         width: 500px;
         height: 300px;
@@ -65,8 +69,8 @@
             margin-top: 0;
         }
         &__item {
-            font-size: 12px;
-            line-height: 14px;
+            font-size: 14px;
+            line-height: 16px;
             margin-top: 13px;
             img {
                 width: 20px;
@@ -78,7 +82,7 @@
     .contacts-select {
         display: block;
         position: relative;
-        height: 30px;
+        height: 40px;
         margin-top: 20px;
         &--active {
             .contacts-select {
@@ -89,7 +93,7 @@
                 }
                 &__hidden {
                     height: unset;
-                    padding: 30px 20px 10px;
+                    padding: 35px 20px 10px;
                     background-color: #fff;
                 }
                 &__variants {

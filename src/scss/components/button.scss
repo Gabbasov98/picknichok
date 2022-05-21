@@ -11,12 +11,27 @@
 }
 
 .btn-gradient {
-    background: linear-gradient(97.58deg, #AAD047 0%, #00A110 109.84%);
     border-radius: 5px;
     color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background: linear-gradient(97.58deg, #AAD047 0%, #00A110 109.84%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
     &:hover {
-        background: linear-gradient(97.58deg, #AAD047 30%, #00A110 109.84%);
         color: #FFFFFF;
+        &::before {
+            background: linear-gradient(97.58deg, #AAD047 30%, #00A110 109.84%);
+        }
     }
     &:disabled {
         background: #C4C4C4;

@@ -76,10 +76,12 @@ $(document).ready(function() {
     })
 
     $(".catalog-page__filter-btn").click(function() {
+        $("body").addClass("fixed-body")
         $(".filter").addClass("filter--active")
     })
 
     $(".filter__close").click(function() {
+        $("body").removeClass("fixed-body")
         $(".filter").removeClass("filter--active")
     })
 

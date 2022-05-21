@@ -16,11 +16,12 @@
         height: 40px;
         width: 100%;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 16px;
         color: #000;
         &::placeholder {
             color: #C4C4C4;
         }
+        &:hover,
         &:focus {
             box-shadow: inset 0px 0px 0px 2px $primary;
         }
@@ -41,7 +42,7 @@
         }
         background-image: url(../img/select-arrow.webp);
         background-repeat: no-repeat;
-        background-position: right 6px center;
+        background-position: right 10px center;
         padding-right: 30px;
         color: #AAAAAA;
         &:focus {
@@ -194,14 +195,14 @@
     .breadcrumbs {
         margin-top: 0;
         &__item {
-            font-size: 10px;
+            font-size: 12px;
             &:not(:first-child) {
                 margin-left: 20px;
                 &::before {
                     margin-right: 9px;
-                    top: 1px;
-                    width: 4px;
-                    background-size: 4px auto;
+                    top: 2px;
+                    width: 5px;
+                    background-size: 5px auto;
                 }
             }
         }
@@ -222,9 +223,10 @@
     }
     .form-group {
         input,
-        textarea {
+        textarea,
+        select {
             border-radius: 3px;
-            font-size: 10px;
+            font-size: 14px;
         }
         input {
             height: 30px;

@@ -81,7 +81,9 @@
         &:hover {
             background: darken(#f2f2f2, 3%);
             color: $primary;
-            transform: translateZ(-10px) translateY(-10px);
+            @media screen and (min-width: 992px) {
+                transform: translateZ(-10px) translateY(-10px);
+            }
         }
         &-img {
             width: 60%;
@@ -305,10 +307,10 @@
             background-size: auto 100%;
         }
         &__info {
-            max-width: 135px;
+            max-width: 150px;
         }
         &__title {
-            font-size: 20px;
+            font-size: 25px;
         }
         &__price {
             font-size: 20px;
@@ -326,13 +328,13 @@
             font-size: 20px;
         }
         &__desc {
-            font-size: 12px;
-            line-height: 14px;
+            font-size: 14px;
+            line-height: 17px;
         }
         &__btn {
-            font-size: 10px;
-            width: 139.82px;
-            height: 24.99px;
+            font-size: 12px;
+            width: 145px;
+            height: 30px;
             border-radius: 3px;
         }
     }
@@ -351,7 +353,7 @@
     .catalog-index {
         &__item {
             height: 100px;
-            font-size: 12px;
+            font-size: 14px;
             padding: 15px;
             position: relative;
             &--13 {

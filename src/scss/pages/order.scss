@@ -36,9 +36,13 @@
         background: #FFFFFF;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
         border-radius: 10px;
-        width: 220px;
+        width: 250px;
         height: 80px;
         position: relative;
+        transition: all .225s;
+        &:hover {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
         &:not(:last-child) {
             margin-right: 30px;
         }
@@ -66,12 +70,12 @@
             }
         }
         &-title {
-            font-size: 14px;
-            line-height: 16px;
+            font-size: 18px;
+            line-height: 20px;
         }
         &-desc {
-            font-size: 10px;
-            line-height: 12px;
+            font-size: 14px;
+            line-height: 16px;
             color: #C4C4C4;
             margin-top: 5px;
         }
@@ -157,8 +161,7 @@
     }
     &__link {
         font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 15px;
         color: $primary;
     }
     &__items {
@@ -290,10 +293,7 @@
             }
         }
         &__subtitle {
-            font-size: 14px;
-        }
-        &__item {
-            height: 65px;
+            font-size: 16px;
         }
         &__pay {
             margin-top: 5px;
@@ -305,14 +305,8 @@
             width: 100%;
             margin: 12px 0 0;
         }
-        &__desc {
-            font-size: 12px;
-            line-height: 14px;
-        }
         &__contacts {
             &-item {
-                font-size: 12px;
-                line-height: 14px;
                 img {
                     width: 15px;
                     height: 15px;
@@ -331,8 +325,8 @@
             line-height: 19px;
         }
         &__link {
-            font-size: 8px;
-            line-height: 9px;
+            font-size: 12px;
+            line-height: 14px;
         }
         &__items {
             margin-top: 21px;
@@ -373,13 +367,7 @@
     }
     .order-product {
         margin-top: 15px;
-        &__title {
-            font-size: 12px;
-            line-height: 14px;
-        }
         &__desc {
-            font-size: 8px;
-            line-height: 9px;
             margin-top: 3px;
         }
         &__wrap {

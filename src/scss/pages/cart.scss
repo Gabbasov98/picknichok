@@ -107,8 +107,14 @@
         margin-left: auto;
         width: 20px;
         display: block;
-        img {
+        svg {
             width: 100%;
+            height: auto;
+        }
+        &:hover {
+            path {
+                stroke: #FF676E;
+            }
         }
     }
     &__price {
@@ -238,9 +244,6 @@
         &__nav {
             margin-top: 44px;
         }
-        &__items {
-            // margin-top: 74px;
-        }
     }
 }
 
@@ -326,8 +329,8 @@
             justify-content: space-between;
         }
         &__num {
-            font-size: 10px;
-            line-height: 12px;
+            font-size: 14px;
+            line-height: 16px;
         }
         &__inner {
             margin-top: 15px;
@@ -345,8 +348,8 @@
             }
         }
         &__delete {
-            font-size: 8px;
-            line-height: 9px;
+            font-size: 14px;
+            line-height: 16px;
         }
         &__items {
             margin-top: 10px;
@@ -359,6 +362,12 @@
         position: relative;
         &__check {
             margin-right: 8px;
+            label {
+                &::before {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
         }
         &__info {
             margin-left: 10px;
@@ -368,20 +377,20 @@
         }
         &__title {
             font-weight: 400;
-            font-size: 12px;
-            line-height: 14px;
+            font-size: 14px;
+            line-height: 16px;
             max-width: 170px;
         }
         &__art {
-            font-size: 6px;
-            line-height: 7px;
+            font-size: 10px;
+            line-height: 11px;
             margin-top: 3px;
         }
         &__delete {
             position: absolute;
             right: 0;
             top: 0;
-            img {
+            svg {
                 width: 10px;
             }
         }
@@ -389,7 +398,7 @@
             position: absolute;
             bottom: 21px;
             left: 124px;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 16px;
             margin-top: 0;
         }
@@ -432,13 +441,19 @@
                 margin-right: 20px;
             }
             &-title {
-                font-size: 12px;
-                line-height: 14px;
+                font-size: 14px;
+                line-height: 16px;
             }
             &-desc {
-                font-size: 8px;
-                line-height: 9px;
+                font-size: 11px;
+                line-height: 12px;
                 margin-top: 6px;
+                br {
+                    display: none;
+                }
+            }
+            img {
+                margin-right: 10px;
             }
         }
     }
