@@ -291,7 +291,7 @@
         color: #AAAAAA;
     }
     &__btn {
-        height: 30px;
+        height: 35px;
         width: 100%;
         margin-top: 10px;
         font-weight: 400;
@@ -300,8 +300,17 @@
     &__calc {
         margin: 10px auto 0;
         display: none;
+        width: 110px;
         &--active {
             display: flex;
+        }
+        input {
+            width: calc(100% - 70px);
+        }
+        button {
+            width: 35px;
+            height: 35px;
+            font-size: 18px;
         }
     }
 }
@@ -312,6 +321,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 350px;
+    max-width: 100%;
     padding: 0 20px;
     color: $primary;
     border: 1px solid $primary;
@@ -502,6 +512,9 @@
 }
 
 @media screen and (max-width: 600px) {
+    .added-badge {
+        top: 20px;
+    }
     .catalog-page {
         &__items {
             grid-template-columns: repeat(3, 1fr);
@@ -543,17 +556,17 @@
             border-radius: 3px;
         }
         &__calc {
-            width: 70px;
+            // width: 70px;
             margin-top: 5px;
-            button {
-                width: 21px;
-                height: 16px;
-                font-size: 10px;
-            }
-            input {
-                width: calc(100% - 42px);
-                font-size: 8px;
-            }
+            // button {
+            //     width: 21px;
+            //     height: 16px;
+            //     font-size: 10px;
+            // }
+            // input {
+            //     width: calc(100% - 42px);
+            //     font-size: 8px;
+            // }
         }
     }
 }

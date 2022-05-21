@@ -34,8 +34,10 @@
         }
     }
     &:disabled {
-        background: #C4C4C4;
         opacity: 1;
+        &::before {
+            background: #C4C4C4;
+        }
     }
 }
 

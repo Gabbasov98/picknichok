@@ -75,29 +75,17 @@ $(document).ready(function() {
         $(this).toggleClass("catalog-item__cart--active")
     })
 
-    $(".contacts-select__variant").click(function() {
-        let path = $(this).attr("data-tab-path")
-        let text = $(this).html()
-        console.log(path, text);
+    $(".contacts-select select").change(function() {
+        let path = $(this).find("option:selected").attr("data-tab-path")
+            // let text = $(this).html()
+        console.log(path);
 
-        $(".contacts-select__variant").removeClass("contacts-select__variant--selected")
-        $(this).addClass("contacts-select__variant--selected")
-        $(".contacts-select__show span").html(text)
-        $(".contacts-select").removeClass("contacts-select--active")
+
 
         $(".contacts__group").removeClass("contacts__group--active")
         $(`.contacts__group[data-tab-path="${path}"]`).addClass("contacts__group--active")
     })
 
-    $(".contacts-select__show").click(function() {
-        $(".contacts-select").toggleClass("contacts-select--active")
-    })
 
-    $(document).mouseup(function(e) {
-        var div = $('.contacts-select');
-        if (!div.is(e.target) && div.has(e.target).length === 0) {
-            div.removeClass("contacts-select--active")
-        }
-    });
 
 })
