@@ -189,22 +189,22 @@
     margin-top: -10px;
     &__all,
     &__item {
-        padding: 0 12px;
+        padding: 0 5px;
         background: linear-gradient(92.29deg, #AAD047 0%, #00A110 100%);
         border-radius: 3px;
         height: 40px;
         display: flex;
         align-items: center;
         color: #F2F2F2;
-        font-size: 13px;
+        font-size: 14px;
         white-space: nowrap;
         margin-right: 10px;
         margin-top: 10px;
         button {
-            margin-left: 10px;
-            width: 12px;
-            height: 12px;
-            background-image: url(../img/close2.webp);
+            margin-left: 14px;
+            width: 15px;
+            height: 15px;
+            background-image: url(../img/close2.svg);
             background-size: 100% auto;
         }
     }
@@ -218,7 +218,7 @@
         border: 1px solid $primary;
         color: #000000;
         button {
-            background-image: url(../img/close3.webp);
+            background-image: url(../img/close3.svg);
         }
     }
 }
@@ -291,11 +291,11 @@
         color: #AAAAAA;
     }
     &__btn {
-        height: 35px;
+        height: 40px;
         width: 100%;
         margin-top: 10px;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 16px;
     }
     &__calc {
         margin: 10px auto 0;

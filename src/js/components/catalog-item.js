@@ -75,6 +75,15 @@ $(document).ready(function() {
         $(this).toggleClass("catalog-item__cart--active")
     })
 
+    $(".catalog-item__calc .ccalc-minus").click(function() {
+        let inputVal = +$(this).siblings("input").val()
+
+        if (inputVal === 1) {
+            $(".catalog-item__cart").removeClass("catalog-item__cart--active")
+        }
+    })
+
+
     $(".contacts-select select").change(function() {
         let path = $(this).find("option:selected").attr("data-tab-path")
             // let text = $(this).html()

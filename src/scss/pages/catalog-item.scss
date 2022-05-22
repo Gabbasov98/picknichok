@@ -37,7 +37,7 @@
     &__buttons {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-between;
         margin-top: 38px;
     }
     &__btn {
@@ -47,16 +47,25 @@
     }
     &__calc {
         display: none;
+        width: 140px;
+        input {
+            width: calc(100% - 80px);
+        }
+        button {
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+        }
     }
     &__cart {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        margin-top: 38px;
+        // position: absolute;
+        transform: scale(1.02);
+        // margin-top: 38px;
         &--active {
             border: 1px solid $primary;
             color: #000;
             font-size: 0;
+            display: none;
             &::before {
                 background: transparent;
             }
@@ -233,12 +242,9 @@
             margin-left: 20px;
         }
         &__btn {
-            width: 170px;
+            width: 175px;
         }
-        &__buttons {
-            justify-content: flex-start;
-            padding-left: 180px;
-        }
+        &__buttons {}
     }
 }
 
@@ -251,15 +257,18 @@
             margin-left: 10px;
         }
         &__buttons {
-            display: block;
-            margin-top: 20px;
+            flex-direction: column;
+            align-items: unset;
+            margin-top: 0;
         }
-        &__btn {}
+        &__btn {
+            margin-top: 10px;
+        }
         &__tabs {
             margin-top: 30px;
         }
-        &__cart {
-            margin-top: 20px;
+        &__favourite {
+            order: -1;
         }
     }
     .gallery {
@@ -435,6 +444,7 @@
             z-index: 10;
             display: flex;
             align-items: center;
+            justify-content: center;
         }
         &__cart {
             flex-grow: 1;
