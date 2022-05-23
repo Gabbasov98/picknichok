@@ -154,18 +154,20 @@
             pointer-events: none;
             transform: translateY(40px);
             transition: all .325s;
-        }
-        &-link {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 23px;
-            display: block;
-            &:not(:last-child) {
-                margin-bottom: 20px;
+            li {
+                display: block;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
             }
-            &:hover {
-                text-decoration-line: underline !important;
-                font-weight: 600;
+            a {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                &:hover {
+                    text-decoration-line: underline !important;
+                    font-weight: 600;
+                }
             }
         }
     }
@@ -340,13 +342,14 @@
                 display: none;
                 transition: unset;
                 pointer-events: unset;
-            }
-            &-link {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 16px;
-                &:not(:last-child) {
-                    margin-bottom: 10px;
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
+                a {
+                    font-size: 14px;
+                    line-height: 16px;
                 }
             }
         }
