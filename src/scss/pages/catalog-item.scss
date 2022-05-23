@@ -222,6 +222,11 @@
                     width: 100%;
                     height: auto;
                 }
+                &:hover {
+                    path {
+                        stroke: $primary;
+                    }
+                }
             }
             &-next {
                 right: 0;
@@ -244,7 +249,6 @@
         &__btn {
             width: 175px;
         }
-        &__buttons {}
     }
 }
 
@@ -337,8 +341,8 @@
         }
         &__art {
             margin-top: 5px;
-            font-size: 8px;
-            line-height: 9px;
+            font-size: 10px;
+            line-height: 12px;
         }
         &__count {
             margin-top: 1px;

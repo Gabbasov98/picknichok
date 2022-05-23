@@ -108,6 +108,14 @@
             &-next {
                 right: -10px;
             }
+            &-prev,
+            &-next {
+                &:hover {
+                    path {
+                        fill: $primary;
+                    }
+                }
+            }
         }
     }
     &__pagination {
@@ -121,7 +129,7 @@
         padding-top: 15px;
         padding-bottom: 20px;
         &__inner {
-            margin-top: 30px;
+            margin-top: 20px;
         }
         &__desc {
             margin-top: 30px;

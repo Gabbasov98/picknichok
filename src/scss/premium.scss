@@ -32,9 +32,6 @@
             }
         }
     }
-    .header__btn-num {
-        background: #0B542B;
-    }
     .footer {
         background: linear-gradient(94.55deg, #0B542B 0.01%, #00A210 100%);
     }
@@ -65,6 +62,17 @@
             width: 172px;
         }
     }
+    .header {
+        &__logo {
+            width: 158px;
+            transform: unset;
+            top: -3px;
+            left: -7px;
+        }
+        &__btn-num {
+            background: #0B542B;
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -85,6 +93,11 @@
 
 @media screen and (max-width: 992px) {
     .wrapper--premium {
+        .header {
+            &__logo {
+                width: 82px;
+            }
+        }
         .footer {
             &__col {
                 &:nth-child(1) {

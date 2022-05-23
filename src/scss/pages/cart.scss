@@ -3,7 +3,7 @@
     padding: 40px 0;
     &__top {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
     }
     &__num {
         margin-left: 10px;
@@ -329,8 +329,8 @@
             justify-content: space-between;
         }
         &__num {
-            font-size: 14px;
-            line-height: 16px;
+            font-size: 12px;
+            line-height: 14px;
         }
         &__inner {
             margin-top: 15px;
@@ -338,8 +338,8 @@
         &__all {
             label {
                 padding-left: 0;
-                font-size: 8px;
-                line-height: 9px;
+                font-size: 12px;
+                line-height: 14px;
                 min-height: unset;
                 &::before,
                 &::after {
@@ -348,8 +348,8 @@
             }
         }
         &__delete {
-            font-size: 14px;
-            line-height: 16px;
+            font-size: 10px;
+            line-height: 12px;
         }
         &__items {
             margin-top: 10px;

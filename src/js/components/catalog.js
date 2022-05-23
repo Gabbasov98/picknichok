@@ -75,6 +75,15 @@ $(document).ready(function() {
         $(this).siblings(".catalog-card__calc").addClass("catalog-card__calc--active")
     })
 
+    $(".catalog-card__calc .ccalc-minus").click(function() {
+        let inputVal = +$(this).siblings("input").val()
+
+        if (inputVal === 1) {
+            $(this).parent(".catalog-card__calc").removeClass("catalog-card__calc--active")
+            $(this).parent(".catalog-card__calc").siblings(".catalog-card__btn").show()
+        }
+    })
+
     $(".catalog-page__filter-btn").click(function() {
         $("body").addClass("fixed-body")
         $(".filter").addClass("filter--active")

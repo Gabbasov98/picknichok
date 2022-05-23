@@ -110,14 +110,11 @@
                 &--active {
                     pointer-events: none;
                     .header__catalog-icon {
-                        span {
-                            opacity: 0;
+                        &-first {
+                            display: none;
                         }
-                        &::before {
-                            transform: translateY(7px) rotate(-45deg);
-                        }
-                        &::after {
-                            transform: translateY(-7px) rotate(45deg);
+                        &-second {
+                            display: unset;
                         }
                     }
                     &~.header__catalog-dropdown {
@@ -134,30 +131,12 @@
             top: 50%;
             transform: translateY(-50%);
             width: 30px;
-            height: 16px;
+            height: 23px;
             display: flex;
             align-items: center;
-            span,
-            &::after,
-            &::before {
-                content: '';
-                position: absolute;
-                z-index: 1;
-                width: 100%;
-                height: 2px;
-                display: block;
-                background-color: #fff;
-                left: 0;
-                transition: all .225s;
-            }
-            span {
-                position: static;
-            }
-            &::before {
-                top: 0;
-            }
-            &::after {
-                bottom: 0;
+            transition: all .225s;
+            &-second {
+                display: none;
             }
         }
         &-dropdown {
@@ -221,7 +200,7 @@
 @media screen and (max-width: 1150px) {
     .header {
         &__inner {
-            padding-left: 140px;
+            padding-left: 150px;
         }
         &__buttons {
             margin: 0 0 0 20px;

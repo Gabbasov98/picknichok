@@ -36,6 +36,25 @@ $(document).ready(function() {
         })
     })
 
+    $(".cart-card__calc .ccalc-minus").click(function() {
+        let inputVal = +$(this).siblings("input").val()
+
+        if (inputVal === 1) {
+            $(this).parents(".cart-card").fadeOut()
+            setTimeout(() => {
+                $(this).parents(".cart-card").remove()
+            }, 2000);
+        }
+    })
+
+    $(".cart-card__delete").click(function() {
+        $(this).parents(".cart-card").fadeOut()
+        setTimeout(() => {
+            $(this).parents(".cart-card").remove()
+        }, 2000);
+    })
+
+
 
 
 })

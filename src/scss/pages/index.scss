@@ -40,6 +40,13 @@
                 width: 35px;
                 height: 35px;
                 border-radius: 50%;
+                transition: all .225s;
+                &:hover {
+                    background: #fff;
+                    path {
+                        stroke: $primary;
+                    }
+                }
             }
             &-prev {
                 left: 30px;
@@ -307,14 +314,15 @@
             background-size: auto 100%;
         }
         &__info {
-            max-width: 150px;
+            max-width: 130px;
         }
         &__title {
-            font-size: 25px;
+            font-size: 20px;
         }
         &__price {
             font-size: 20px;
             margin-top: 5px;
+            padding-right: 10px;
         }
     }
     .bussinesman {
@@ -333,7 +341,7 @@
         }
         &__btn {
             font-size: 12px;
-            width: 145px;
+            width: 150px;
             height: 30px;
             border-radius: 3px;
         }
@@ -341,7 +349,10 @@
     .retailer {
         padding: 20px 0;
         &__title {
-            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 19px;
+            max-width: 250px;
+            margin: 0 auto 30px;
         }
         &__row {
             margin-top: 13px;
