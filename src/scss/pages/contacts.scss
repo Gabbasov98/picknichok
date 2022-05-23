@@ -1,13 +1,13 @@
 @import "../vars.scss";
 .contacts {
-    padding: 40px 0;
+    padding: 20px 0 40px;
     &__group {
         margin-top: 40px;
         display: flex;
         justify-content: space-between;
     }
     &__subtitle {
-        font-size: 30px;
+        font-size: 27px;
         line-height: 120%;
     }
     &__map {
@@ -42,6 +42,9 @@
 
 @media screen and (max-width: 992px) {
     .contacts {
+        &__subtitle {
+            font-size: 24px;
+        }
         &__group {
             display: block;
             margin-top: 30px;

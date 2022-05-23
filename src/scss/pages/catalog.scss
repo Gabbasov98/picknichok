@@ -1,6 +1,6 @@
 @import '../vars.scss';
 .catalog {
-    padding: 40px 0;
+    padding: 20px 0 40px;
     &__inner {
         display: grid;
         grid-template-columns: 1fr 1fr;

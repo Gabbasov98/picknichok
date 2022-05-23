@@ -243,6 +243,13 @@
                     fill: $primary
                 }
             }
+            &--active {
+                pointer-events: none;
+                color: $primary;
+                path {
+                    fill: $primary
+                }
+            }
         }
         &__title {
             display: block;
