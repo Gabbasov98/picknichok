@@ -156,6 +156,11 @@
 }
 
 @media screen and (max-width: 576px) {
+    .wrapper--catalog-item {
+        .footer {
+            padding-bottom: 140px;
+        }
+    }
     .footer {
         margin-top: 20px;
         padding: 10px 0 80px;
