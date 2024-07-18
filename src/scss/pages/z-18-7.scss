@@ -68,8 +68,21 @@
       fill: #fff;
     }
   }
+  svg{
+    width: 24px;
+    height: auto;
+  }
   @media screen and (max-width: 992px) {
-    display: none;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    bottom: 20px;
+    svg{
+      width: 20px;
+    }
+  }
+  @media screen and (max-width: 576px){
+    bottom: 70px;
   }
   &--active {
     visibility: visible;
@@ -138,6 +151,10 @@
     .modal__title{
       font-size: 22px;
     }
+  }
+
+  .modal-dialog{
+    max-width: calc(100% - 20px);
   }
 
   .catalog-item__count{
