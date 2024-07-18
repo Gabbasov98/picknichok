@@ -132,6 +132,9 @@
   }
 
   .offer-modal{
+    .modal-dialog{
+      max-width: calc(100% - 20px);
+    }
     .modal__title{
       font-size: 22px;
     }

@@ -65,50 +65,6 @@
   }
 }
 
-
-@media screen and (max-width: 992px){
-  .advantages{
-    padding: 10px 0;
-  }
-
-  .advantage-item{
-    width: 144px;
-    &__icon{
-      width: 60px;
-      height: 60px;
-      img{
-        width: 30px;
-      }
-    }
-    &__title{
-      font-size: 12px;
-      margin-top: 10px;
-    }
-  }
-
-  .ask{
-    padding: 30px 0 20px;
-    &__inner{
-      grid-template-columns: 100%;
-    }
-    &__col,
-    &__col2{
-      padding: 30px 10px;
-    }
-    &__title{
-      text-transform: unset;
-      font-weight: 600;
-    }
-    &__col2{
-      border-radius: 0 0 10px 10px;
-      margin-bottom: -1px;
-      margin-top: 0;
-      height: auto;
-      width: calc(100% + 2px);
-    }
-  }
-}
-
 .ask-form{
   &__btn {
     width: 100%;
@@ -138,10 +94,10 @@
     }
   }
   &__agree{
-    font-size: 10px;
+    font-size: 12px;
     line-height: 120%;
     margin-top: 15px;
-    max-width: 308px;
+    max-width: 350px;
     a{
       color: #fff;
     }
@@ -192,15 +148,50 @@
 
 
 @media screen and (max-width: 992px){
-  .ask{
-    &__title{
-      font-size: 20px;
+  .advantages{
+    padding: 10px 0;
+  }
+
+  .advantage-item{
+    width: 144px;
+    &__icon{
+      width: 60px;
+      height: 60px;
+      img{
+        width: 30px;
+      }
     }
-    &__desc{
-      font-size: 16px;
+    &__title{
+      font-size: 12px;
+      margin-top: 10px;
     }
   }
 
+  .ask{
+    padding: 30px 0 20px;
+    &__inner{
+      grid-template-columns: 100%;
+    }
+    &__col,
+    &__col2{
+      padding: 30px 10px;
+    }
+    &__title{
+      text-transform: unset;
+      font-weight: 600;
+    }
+    &__col2{
+      border-radius: 0 0 10px 10px;
+      margin-bottom: -1px;
+      margin-top: 0;
+      height: auto;
+      width: calc(100% + 2px);
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px){
   .header-contacts{
     margin-right: 45px;
     .header__phone{
@@ -222,6 +213,16 @@
   .advantage-item{
     width: 100%;
     max-width: 100%;
+  }
+
+
+  .ask{
+    &__title{
+      font-size: 20px;
+    }
+    &__desc{
+      font-size: 16px;
+    }
   }
 }
 

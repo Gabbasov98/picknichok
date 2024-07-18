@@ -124,6 +124,13 @@
   }
 }
 
+.order-info__hint,
+.modal__agree{
+  font-size: 12px;
+  line-height: 120%;
+  text-align: left;
+}
+
 
 @media screen and (max-width: 992px){
  .cookie-modal{
