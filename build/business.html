@@ -23,7 +23,12 @@
                 <input class="header__search-input" type="text" placeholder="Я хочу найти...">
                 <button class="header__search-btn btn btn-gradient">ПОИСК</button>
             </div>
-            <a href="tel:+73912655030" class="header__phone">+7 391 265 5030</a>
+            <div class="header-contacts">
+                <a href="tel:+73912655030" class="header__phone">+7 391 265 5030</a>
+                <button class="header-contacts__btn">
+                    Заказать звонок
+                </button>
+            </div>
             <button class="header__burger">
                 <span></span>
             </button>
@@ -89,6 +94,7 @@
         </div>
     </div>
 </header>
+
         <main class="content">
             <div class="breadcrumbs">
                 <div class="container">
@@ -105,7 +111,7 @@
                     <div class="business__inner">
                         <div class="business__left">
                             <div class="business__inner-title">Производим товары под собственными торговыми марками</div>
-                            <button class="business__btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                            <button class="business__btn">Получить КП</button>
                         </div>
                         <div class="business__right">
                             <div class="business__img">
@@ -278,23 +284,6 @@
 </div>
             </section>
 
-            <section class="offer">
-                <div class="container">
-                    <div class="offer__inner">
-                        <div class="offer__title display2">ПОЛУЧИТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</div>
-                        <form class="form offer__form">
-                            <fieldset class="form-group offer__form-group">
-                                <input type="text" placeholder="ФИО">
-                            </fieldset>
-                            <fieldset class="form-group offer__form-group">
-                                <input type="tel" placeholder="Телефон">
-                            </fieldset>
-                            <button class="offer__btn btn btn-gradient">Оформить заказ</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-
         </main>
         <footer class='footer'>
     <div class='container'>
@@ -414,8 +403,25 @@
         <span class="footer-mob__title">Контакты</span>
     </a>
 </div>
+
+<button class="scroll-up btn-green-outline">
+    <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.0607 0.93934C12.4749 0.353553 11.5251 0.353553 10.9393 0.93934L1.3934 10.4853C0.807611 11.0711 0.807611 12.0208 1.3934 12.6066C1.97919 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.93934ZM13.5 3V2H10.5V3H13.5Z" fill="#00A110"/>
+    </svg>
+</button>
+
     </div>
-    <script src="js/libs.min.js"></script>
+    <div class="cookie-modal _active">
+    <div class="cookie-modal__text">
+        Используя данный сайт, Вы даете согласие на использование файлов Cookie, помогающих нам сделать его удобнее для вас.
+    </div>
+    <button class="cookie-modal__btn btn btn-white">
+        ОК
+    </button>
+</div>
+
+
+<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
 

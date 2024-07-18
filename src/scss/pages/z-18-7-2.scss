@@ -1,0 +1,247 @@
+.advantages{
+  padding: 20px 0;
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.advantage-item{
+  width: 196px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__icon{
+    background: linear-gradient(97.58deg,#aad047 0,#00a110 109.84%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 40px;
+    }
+  }
+  &__title{
+    font-size: 16px;
+    line-height: 120%;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+.ask{
+  padding: 30px 0 20px;
+  &__inner{
+    border: 1px solid #A6CF46;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: calc(100% - 500px) 500px;
+  }
+  &__col{
+    padding: 50px 40px;
+  }
+  &__title{
+    font-size: 40px;
+    line-height: 122%;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  &__desc{
+    margin-top: 10px;
+    max-width: 520px;
+    font-size: 20px;
+    line-height: 120%;
+  }
+  &__col2{
+    background: linear-gradient(94.55deg,#aad047 0,#00a110 100%);
+    padding: 40px 30px;
+    border-radius: 0 10px 10px 0;
+    margin-right: -1px;
+    margin-top: -1px;
+    height: calc(100% + 2px);
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .advantages{
+    padding: 10px 0;
+  }
+
+  .advantage-item{
+    width: 144px;
+    &__icon{
+      width: 60px;
+      height: 60px;
+      img{
+        width: 30px;
+      }
+    }
+    &__title{
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  }
+
+  .ask{
+    padding: 30px 0 20px;
+    &__inner{
+      grid-template-columns: 100%;
+    }
+    &__col,
+    &__col2{
+      padding: 30px 10px;
+    }
+    &__title{
+      text-transform: unset;
+      font-weight: 600;
+    }
+    &__col2{
+      border-radius: 0 0 10px 10px;
+      margin-bottom: -1px;
+      margin-top: 0;
+      height: auto;
+      width: calc(100% + 2px);
+    }
+  }
+}
+
+.ask-form{
+  &__btn {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    &:before{
+      z-index: 1;
+      background: linear-gradient(97.58deg, #0B542B 0%, #00A110 109.84%);
+    }
+    &:hover {
+      color: #FFFFFF;
+      &:before{
+        background: linear-gradient(97.58deg, #0B542B 30%, #00A110 109.84%);
+      }
+    }
+    &:disabled {
+      opacity: 1;
+      &:before{
+        background: #C4C4C4;
+      }
+    }
+    span{
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &__agree{
+    font-size: 10px;
+    line-height: 120%;
+    margin-top: 15px;
+    max-width: 308px;
+    a{
+      color: #fff;
+    }
+  }
+  .form-group{
+    margin-bottom: 15px;
+  }
+}
+
+.header-contacts{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  .header__phone{
+    height: unset;
+  }
+  &__btn{
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+    color: $primary;
+    &:hover{
+      text-decoration-color: transparent;
+    }
+  }
+}
+
+.call-modal{
+  @media screen and (min-width: 993px){
+    .modal-dialog{
+      max-width: 402px;
+    }
+    .modal__content{
+      padding: 60px 50px;
+    }
+    .modal__close{
+      top: 20px;
+      right: 20px;
+    }
+  }
+  .modal__title,
+  .modal__desc{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .ask{
+    &__title{
+      font-size: 20px;
+    }
+    &__desc{
+      font-size: 16px;
+    }
+  }
+
+  .header-contacts{
+    margin-right: 45px;
+    .header__phone{
+      margin: 0;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .advantages{
+    &__items{
+      display: grid;
+      grid-template-columns: repeat(3,calc(100% / 3 - 16px));
+      gap: 30px 24px;
+    }
+  }
+
+  .advantage-item{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 576px){
+  .advantages{
+    &__items{
+      grid-template-columns: repeat(2,calc(50% - 12px));
+    }
+  }
+
+  .header-contacts{
+    margin-right: 20px;
+    .header__phone{
+      font-size: 16px;
+    }
+    &__btn{
+      margin-top: 0;
+      font-size: 12px;
+    }
+  }
+}

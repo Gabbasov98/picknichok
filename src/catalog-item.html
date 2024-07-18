@@ -65,9 +65,25 @@
                                 <h1 class="catalog-item__title display2">Мангал Премиум 200*500 мм складной</h1>
                                 <div class="catalog-item__art">Арт. 320082-42</div>
                             </div>
-                            <div class="catalog-item__count">
-                                <div class="catalog-item__price">5 999 Р</div>
+                            <div class="product-cart">
+                                <div class="product-cart__col">
+                                    @@include('components/cards/_cartcalc.html',{
+                                    "mClass":"product-cart__calc"
+                                    })
+                                    <div class="catalog-item__count">
+                                        <div class="catalog-item__price">5 999 Р</div>
+                                    </div>
+                                </div>
+                                <div class="product-cart__col2">
+                                    <div class="product-cart__title">
+                                        Итого:
+                                    </div>
+                                    <div class="catalog-item__count">
+                                        <div class="catalog-item__price">5 999 Р</div>
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="catalog-item__buttons">
                                 <div class="catalog-item__fix">
                                     <button data-cart-added="В корзине" class="catalog-item__cart  catalog-item__btn btn btn-gradient">В корзину</button>

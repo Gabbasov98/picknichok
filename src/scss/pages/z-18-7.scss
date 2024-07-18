@@ -1,0 +1,167 @@
+.catalog-card__title{
+  font-size: 18px;
+}
+
+.catalog-card__art{
+  font-size: 14px;
+}
+
+.catalog-item__art{
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.business__btn{
+  text-transform: uppercase;
+}
+
+.offer-modal{
+  .modal-dialog{
+    max-width: 608px;
+  }
+  .modal__close{
+    width: 24px;
+    height: 24px;
+    top: 30px;
+    right: 30px;
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+  .modal__content{
+    width: 100%;
+  }
+  .form-group{
+    margin-bottom: 15px;
+  }
+  .modal__btn{
+    margin-top: 15px;
+  }
+  .modal__title{
+    font-size: 30px;
+    line-height: 120%;
+    width: calc(100% + 90px);
+  }
+}
+
+
+.scroll-up {
+  z-index: 22;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 64px;
+  height: 64px;
+  transition: all .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 2px 2px 10px 0 rgba(0, 161, 16, 0.2);
+  &:hover {
+    path {
+      fill: #fff;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+  &--active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.catalog-item__count{
+  margin-top: 9px;
+}
+
+.product-cart{
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  &__col2{
+    text-align: right;
+  }
+  &__title{
+    font-size: 25px;
+    line-height: 120%;
+  }
+  .catalog-item__price{
+    margin: 0;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .offer-modal{
+    .modal__close{
+      top: 20px;
+      right: 20px;
+    }
+    .modal__content{
+      padding-top: 55px;
+    }
+    .modal__title{
+      width: 100%;
+      text-align: center;
+    }
+    .modal__desc{
+      text-align: center;
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .catalog-card__title{
+    font-size: 14px;
+  }
+
+  .catalog-card__art{
+    font-size: 12px;
+  }
+
+  .catalog-item__art{
+    font-size: 12px;
+  }
+
+  .offer-modal{
+    .modal__title{
+      font-size: 22px;
+    }
+  }
+
+  .catalog-item__count{
+    margin: 0;
+  }
+
+  .product-cart{
+    margin-top: 14px;
+    display: block;
+    &__col,
+    &__col2{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__col{
+      .catalog-item__price{
+        font-size: 25px;
+        line-height: 120%;
+      }
+    }
+    &__col2{
+      margin-top: 20px;
+      text-align: left;
+    }
+    &__title{
+      font-size: 16px;
+    }
+  }
+}

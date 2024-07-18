@@ -51,19 +51,9 @@
                                                 </svg>
                                             </button>
                                             <div class="cart-card__price">999 Р</div>
-                                            <div class='cart-card__calc cartcalc'>
-                                                <button class='ccalc-minus'>
-                                                    <svg width="9" height="3" viewBox="0 0 9 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M0.65 2.17V0.322H8.68V2.17H0.65Z" fill="black"/>
-                                                    </svg>
-                                                </button>
-                                                <input type='text' value='1'>
-                                                <button class='ccalc-plus'>
-                                                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9.736 4.376V6.202H5.908V10.03H4.082V6.202H0.276V4.376H4.082V0.57H5.908V4.376H9.736Z" fill="black"/>
-                                                    </svg>
-                                                </button>
-                                            </div>
+                                            @@include('components/cards/_cartcalc.html',{
+                                            "mClass":"cart-card__calc"
+                                            })
                                         </div>
                                     </div>
                                     }

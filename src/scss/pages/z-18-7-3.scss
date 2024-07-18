@@ -1,0 +1,169 @@
+.reviews{
+  padding: 50px 0;
+  &__title{
+    text-align: center;
+  }
+}
+
+.reviews-slider{
+  margin-top: 30px;
+  padding: 0 64px;
+  position: relative;
+  &__wrap{
+    overflow: hidden;
+  }
+  .swiper{
+    &-container{
+      width: calc(100% + 35px);
+    }
+    &-wrapper{
+      align-items: stretch;
+    }
+    &-slide{
+      width: calc(100% / 3);
+      height: auto;
+      padding-right: 35px;
+    }
+    &-button{
+      width: auto;
+      height: auto;
+      svg{
+        width: 22px;
+        height: auto;
+      }
+      &-prev{
+        left: 0;
+      }
+      &-next{
+        right: 0;
+      }
+      &:hover{
+        path{
+          fill: $primary;
+        }
+      }
+    }
+  }
+}
+
+.review-card{
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  padding: 40px 20px;
+  &__top{
+    display: flex;
+    align-items: center;
+  }
+  &__img{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-right: 15px;
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 50%;
+    }
+  }
+  &__title,
+  &__name{
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+  &__date{
+    font-size: 12px;
+    line-height: 120%;
+    color: #aaa;
+    margin-top: 11px;
+  }
+  &__title{
+    margin-top: 5px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 137%;
+    font-style: italic;
+    margin-top: 20px;
+  }
+}
+
+.cookie-modal{
+  transition: all .3s;
+  opacity: 0;
+  pointer-events: none;
+  width: 520px;
+  position: fixed;
+  left: 120px;
+  bottom: 50px;
+  padding: 17px 20px;
+  background: linear-gradient(94.55deg,#aad047 0,#00a110 100%);
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  z-index: 30;
+  border-radius: 10px;
+  &._active{
+    opacity: 1;
+    pointer-events: unset;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 137%;
+  }
+  &__btn{
+    font-weight: 600;
+    font-size: 16px;
+    color: #0b542b;
+    width: 105px;
+    height: 33px;
+    border-radius: 5px;
+    margin-left: 16px;
+    flex-shrink: 0;
+  }
+}
+
+
+@media screen and (max-width: 992px){
+ .cookie-modal{
+   left: 20px;
+   bottom: 20px;
+ }
+}
+
+
+@media screen and (max-width: 768px){
+  .reviews{
+    padding: 25px 0;
+  }
+
+  .reviews-slider{
+    margin-top: 16px;
+    padding: 0 20px;
+    .swiper-slide{
+      width: 100%;
+    }
+    .swiper-button{
+      svg{
+        width: 10px;
+      }
+    }
+  }
+
+  .cookie-modal{
+    max-width: calc(100vw - 20px);
+  }
+}
+
+
+@media screen and (max-width: 576px){
+  .cookie-modal{
+    left: 10px;
+    display: block;
+    &__btn{
+      width: 100%;
+      margin: 10px 0 0;
+    }
+  }
+}
