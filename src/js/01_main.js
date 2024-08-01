@@ -1,3 +1,4 @@
+
 function mainSlider() {
     var swiper = new Swiper('.main .swiper-container', {
         slidesPerView: 1,
@@ -15,7 +16,6 @@ function mainSlider() {
         },
     })
 }
-
 $(document).ready(function() {
     $('input[type="tel"]').mask('+7 999 999-9999', { autoclear: false }, { placeholder: '+7             ' });
     cartCalc()

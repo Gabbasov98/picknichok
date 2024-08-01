@@ -10,7 +10,7 @@ const bs = require('browser-sync');
 module.exports = function dev_js() {
     return src(['src/js/components/*.js', 'src/js/01_main.js'])
         .pipe(map.init())
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(concat('main.min.js'))
         .pipe(map.write('../sourcemaps'))
         .pipe(dest('build/js/'))

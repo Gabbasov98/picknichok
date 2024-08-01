@@ -23,6 +23,13 @@ function collectionSlider() {
     var swiper = new Swiper('.collection .swiper-container', {
         slidesPerView: 4,
         spaceBetween: 30,
+        watchSlidesProgress: true,
+        preventClicks :true,
+        a11y: false,
+        observer: true,
+        observeParents: true,
+        observeSlideChildren: true,
+        noSwipingSelector: "button",
         navigation: {
             nextEl: '.collection .swiper-button-next',
             prevEl: '.collection .swiper-button-prev',
